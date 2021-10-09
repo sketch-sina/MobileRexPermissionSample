@@ -1,0 +1,3 @@
+rootProject.name = "MobileRexPermissionSample"
+include ':app'
+include ':RexPerm'
