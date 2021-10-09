@@ -1,6 +1,7 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.library'
     id 'kotlin-android'
+    id 'maven-publish'
 }
 
 android {
@@ -8,7 +9,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "expressteam.sina.mobilerexpermissionsample"
+
         minSdkVersion 21
         targetSdkVersion 31
         versionCode 1
@@ -29,14 +30,20 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+
 }
 
 dependencies {
-//
+
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.6.0'
-    implementation 'com.github.sketch-sina:MobileRexPermissionSample:master-SNAPSHOT'
     implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'com.google.android.material:material:1.4.0'
+
+    implementation 'com.jaredrummler:apk-parser:1.0.2'
+    implementation 'com.github.smart-fun:XmlToJson:1.5.1'
+
 
 
 }
